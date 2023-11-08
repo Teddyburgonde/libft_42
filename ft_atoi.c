@@ -6,7 +6,7 @@
 /*   By: tebandam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:21:59 by tebandam          #+#    #+#             */
-/*   Updated: 2023/11/08 13:02:38 by tebandam         ###   ########.fr       */
+/*   Updated: 2023/11/08 18:50:00 by tebandam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	is_whitespace(char c)
 	return (0);
 }
 
-int	ft_atoi(const char *str)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	a;
@@ -28,21 +28,21 @@ int	ft_atoi(const char *str)
 	i = 0;
 	a = 0;
 	sign = 1;
-	while (is_whitespace(str[i]))
+	while (is_whitespace(nptr[i]))
 		i++;
-	while (str[i] == '+' || str[i] == '-')
+	while (nptr[i] == '+' || nptr[i] == '-')
 	{
-		if (str[i + 1] == '+')
+		if (nptr[i + 1] == '+')
 			return (0);
-		if (str[i] == '-')
+		if (nptr[i] == '-')
 			sign *= -1;
-		if (str[i + 1] == '-')
+		if (nptr[i + 1] == '-')
 			return (0);
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		a = a * 10 + (str[i] - '0');
+		a = a * 10 + (nptr[i] - '0');
 		i++;
 	}
 	return (a * sign);
