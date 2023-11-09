@@ -6,7 +6,7 @@
 /*   By: tebandam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:25:28 by tebandam          #+#    #+#             */
-/*   Updated: 2023/11/09 10:15:53 by tebandam         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:48:35 by tebandam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	int		i;
 	int		j;
-	
+
 	if (!s)
 		return (NULL);
 	i = 0;

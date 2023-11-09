@@ -6,7 +6,7 @@
 /*   By: tebandam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:26:36 by tebandam          #+#    #+#             */
-/*   Updated: 2023/11/09 10:27:39 by tebandam         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:50:26 by tebandam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*tab;
 	int		len;
 	int		i;
-	
+
 	if (!s)
 		return (NULL);
 	i = 0;

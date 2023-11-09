@@ -6,7 +6,7 @@
 #    By: tebandam <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 13:05:47 by tebandam          #+#    #+#              #
-#    Updated: 2023/10/31 14:51:25 by tebandam         ###   ########.fr        #
+#    Updated: 2023/11/09 10:45:51 by tebandam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ OBJS_BONUS=$(BONUS:.c=.o)
 
 RM=rm -f
 
-CC= gcc
+CC= cc
 ARRC=ar -rc
 CFLAGS=-Wall -Wextra -Werror
 
@@ -53,9 +53,5 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 re: fclean $(NAME)

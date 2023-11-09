@@ -6,14 +6,14 @@
 /*   By: tebandam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:11:01 by tebandam          #+#    #+#             */
-/*   Updated: 2023/11/08 15:12:09 by tebandam         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:17:10 by tebandam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
