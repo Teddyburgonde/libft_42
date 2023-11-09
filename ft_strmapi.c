@@ -6,18 +6,11 @@
 /*   By: tebandam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:26:36 by tebandam          #+#    #+#             */
-/*   Updated: 2023/11/08 16:49:16 by tebandam         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:27:39 by tebandam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	change(unsigned int i, char c)
-{
-	if (i == 0 || i != '\0')
-		return ('X');
-	return (c);
-}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

@@ -6,24 +6,24 @@
 /*   By: tebandam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:23:08 by tebandam          #+#    #+#             */
-/*   Updated: 2023/10/30 17:43:39 by tebandam         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:11:35 by tebandam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strdup(const char *s)
 {
 	char		*tab;
 	int			i;
 
 	i = 0;
-	tab = malloc(sizeof(char) * ft_strlen(s1) + 1);
+	tab = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (tab)
 	{
-		while (s1[i])
+		while (s[i])
 		{
-			tab[i] = s1[i];
+			tab[i] = s[i];
 			i++;
 		}
 		tab[i] = '\0';

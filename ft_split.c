@@ -6,20 +6,20 @@
 /*   By: tebandam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:25:28 by tebandam          #+#    #+#             */
-/*   Updated: 2023/11/08 16:48:29 by tebandam         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:15:53 by tebandam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_separator(char c, char charset)
+static int	ft_separator(char c, char charset)
 {
 	if (c == charset)
 		return (1);
 	return (0);
 }
 
-int	wd_count_words(const char *str, char charset)
+static int	wd_count_words(const char *str, char charset)
 {
 	int	i;
 	int	count;
@@ -39,7 +39,7 @@ int	wd_count_words(const char *str, char charset)
 	return (count);
 }
 
-char	*ft_strdup_edit(const char *str, char charset)
+static char	*ft_strdup_edit(const char *str, char charset)
 {
 	int		i;
 	char	*word;
